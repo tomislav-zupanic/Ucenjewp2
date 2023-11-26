@@ -85,7 +85,7 @@ select * from smjerovi where brojsati=null;
 select * from smjerovi where
 brojsati is not  null;
 select * from smjerovi where 
-brojsati is  null null;
+brojsati is  null ;
 
 select isnull (brojsati,30) from smjerovi ;
 
