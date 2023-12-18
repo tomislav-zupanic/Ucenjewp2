@@ -1,16 +1,20 @@
-﻿//Console.WriteLine(7);
-//Console.WriteLine(true);
-//Console.WriteLine("Prvi");
-//Console.WriteLine("Drugi");
-//Console.WriteLine(3.14);
+﻿Console.WriteLine(7);
+Console.WriteLine(true);
+Console.Write("Prvi");
+Console.Write("Drugi");
+Console.WriteLine(3.14);
+Console.Write("Unesi ime: ");
+string ime = Console.ReadLine();
 
-//Console.Write("Unesi ime: ");
-//string ime =  Console.ReadLine();
+Console.WriteLine("Unijeli ste " + ime);
 
-//Console.WriteLine("Unijeli ste " + ime);
-
-
-Console.Write("Unesi visinu u centimetrima: ");
+Console.Write("Unesi visinu u centrimentrima: ");
 int Visina = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Visoki ste " + Visina / 100 + "metara");
+float VisinaUMetrima = (float)Visina / 100;
+
+Console.WriteLine("Visoki ste " + VisinaUMetrima + "metara");
+
+int Broj = int.Parse(Console.ReadLine());
+Console.WriteLine((float)Broj / 100);
+

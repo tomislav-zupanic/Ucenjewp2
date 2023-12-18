@@ -34,7 +34,6 @@ namespace WebAPI.Controllers
         public String Helloworld()
         {
             return "Tomislav Županić";
-
         }
 
 
