@@ -31,9 +31,9 @@ namespace WebAPI.Controllers
         }
         [HttpGet]
         [Route("Hello")]
-        public String Helloworld()
+        public String Helloworld(string Ime,int Godine, bool aktivan)
         {
-            return "Tomislav Županić";
+            return "Upisali ste " + Ime + ", koji ima " + Godine + " godina," + aktivan;
         }
 
 

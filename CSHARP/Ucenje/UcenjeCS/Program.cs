@@ -16,5 +16,15 @@ float VisinaUMetrima = (float)Visina / 100;
 Console.WriteLine("Visoki ste " + VisinaUMetrima + "metara");
 
 int Broj = int.Parse(Console.ReadLine());
-Console.WriteLine((float)Broj / 100);
+Console.WriteLine((float)Broj);
+
+Console.Write("Unesi dužinu prostorije: ");
+float Duzina = float.Parse(Console.ReadLine());
+
+Console.Write("Unesi širinu prostorije: ");
+float Sirina = float.Parse(Console.ReadLine());
+
+var Povrsina = Duzina * Sirina;
+
+Console.WriteLine(Povrsina);
 
