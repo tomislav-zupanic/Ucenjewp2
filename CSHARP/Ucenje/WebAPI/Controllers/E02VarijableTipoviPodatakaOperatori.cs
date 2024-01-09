@@ -4,7 +4,7 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("E02")]
-    public class E02VarijableTipoviPodatakaOperatori : ControllerBase
+    public class E02VarijableTipoviPodatakaOperatori:ControllerBase
     {
         [HttpGet]
         [Route("zad1")]
@@ -19,37 +19,34 @@ namespace WebAPI.Controllers
         public float Zad2(int i, int j)
         {
             // Ruta vraća kvocijent dvaju primljenih brojeva
-            return (float)i / j;
+            return 0; // Ovo ne valja, DZ
         }
+
         [HttpGet]
         [Route("zad3")]
         public float Zad3(int i, int j)
         {
-            // Ruta vraća zboj umožak i kvocijent 2 broja
-            //return ((float)i * j) + ((float)i / j);,isto funkcionira
-            var umnozak = i * j;
+            // Ruta vraća zbroj umnoška i kvocijenta primljenih brojeva
+            var umnozak = i * j; // var je ključna riječ koja preuzima tip podatka s desne strane znaka =
             var kvocijent = (float)i / j;
             return umnozak + kvocijent;
         }
+
         [HttpGet]
         [Route("zad4")]
         public string Zad4(string s, string s1)
         {
             // Ruta vraća spojene primljene znakove
             return s + s1;
-
         }
+
         [HttpGet]
         [Route("zad5")]
-
-        public bool IstiSu(int a, int b) 
+        public bool IstiSu(int a, int b)
         {
-            Console.WriteLine("a={0}",a);
-            //ruta vraca true ako je a jednako b,inace vraca false
-
+            Console.WriteLine("a={0}",a); // pogledati u konzoli
+            // ruta vraća true ako je a jednako b, inače vraća false
             return a == b;
         }
-
     }
-
 }
