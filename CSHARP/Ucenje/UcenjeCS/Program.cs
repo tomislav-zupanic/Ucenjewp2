@@ -1,7 +1,7 @@
 ﻿
 using UcenjeCS;
 
-//E01UlazIzlaz.Izvedi();
+E01UlazIzlaz.Izvedi();
 
 //E02VarijableTipoviPodatakaOperatori.Izvedi();
 
@@ -19,5 +19,5 @@ using UcenjeCS;
 
 //09Metode.Izvedi();
 
-Console.WriteLine(Z01Metode.CijeliDioZbroja(3.4,5.8));
+//Console.WriteLine(Z01Metode.CijeliDioZbroja(3.4,5.8));
 

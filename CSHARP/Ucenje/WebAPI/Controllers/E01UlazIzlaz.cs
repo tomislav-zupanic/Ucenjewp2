@@ -11,7 +11,7 @@ namespace WebAPI.Controllers
         [Route("Hello")]
         public string Helloworld(string Ime,int Godine, bool aktivan)
         {
-            return "Upisali ste " + Ime + ", koji ima " + Godine + " godina, " + aktivan;
+            return "Upisali ste " + Ime + ", koji ima " + Godine + " godine, " + aktivan;
         }
 
     }
