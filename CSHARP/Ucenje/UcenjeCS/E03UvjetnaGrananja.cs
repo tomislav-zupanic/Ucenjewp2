@@ -1,156 +1,128 @@
-﻿namespace UcenjeCS
+﻿using System.Reflection.Metadata;
+
+namespace UcenjeCS
 {
     internal class E03UvjetnaGrananja
     {
         public static void Izvedi()
         {
-            int i = 7; // Namjerno ne radim čitanje iz COnsole kako bi dobili na vremenu
+            int i = 7;
 
-            // Binarno grananje
+            bool Uvjet = i == 7;
 
-            bool uvjet = i == 7;
-
-
-            // uvjet ima vrijednost true
-            if(uvjet)
+            if (Uvjet)
             {
-                Console.WriteLine($"broj je {i}, ušli smo u true dio if naredbe");
+                Console.WriteLine($"broj je {i} usao sam u true dio if naredbe");
             }
 
-            // ovo gore i sada sljedeće je minimalni dio if naredbe
-            // inače se u pravilu ovako piše
-            if(i == 7)
+            if (i == 7)
             {
-                Console.WriteLine("Isti uvjet kao i prethodno");
+                Console.WriteLine("isti uvjet kao i prethodno");
             }
-
-            // drugi dio if naredbe (neobavezni) else
 
             if (i < 5)
             {
-                Console.WriteLine("i je manje od 5");
+                Console.WriteLine("i je manji od 5");
             }
             else
             {
-                Console.WriteLine("i nije manje od 5");
+                Console.WriteLine("i nije manji od 5");
             }
 
-
-            // puni izgled if naredbe
-
-            if (i == 2) {
-                Console.WriteLine("i je 2");
-            }else if (i == 3)
+            if (i == 2)
+            {
+                Console.WriteLine("i je 2 ");
+            }
+            else if (i == 3)
             {
                 Console.WriteLine(3);
+
             }
             else
             {
-                Console.WriteLine("i nije 2 niti je 3");
+                Console.WriteLine("i niti je 2 niti  je 3");
             }
-
             int j = 2;
             if (i == 7)
             {
-                if(j==2)
+                if (j == 2)
                 {
-                    Console.WriteLine("Oba uvjeta su zadovoljena ugnježđeno");
+                    Console.WriteLine("Oba uvjeta su zadovoljena ugnjezdena");
                 }
             }
-
-            // korištenje logičkih operatora
-            // logičko & i uvjetovano &&
             i = 5;
-            if(i==7 & j == 2)
+            if (i == 7 & j == 2)
             {
-                Console.WriteLine("Oba uvjeta su zadovoljena");
+                Console.WriteLine("oba uvjeta zadovoljena");
             }
-            // & provjeravaju se oba uvjeta bez obzira ako se na prvom padne (false)
-
-            if(i==7 && j== 2)
+            if (i == 7 && j == 2)
             {
-                Console.WriteLine("Oba uvjeta su zadovoljena");
+                Console.WriteLine("oba uvjeta zadovoljena");
             }
-
-            // && Ukoliko padne (false) na prvom uvjetu ne provjerava se drugi
-
-
-
-            // logičko | i uvjetovano ||
-
-            if(i==5 | j == 1)
+            if (i == 5 | j == 1)
             {
-                Console.WriteLine("Dovoljno je da jedan od uvjeta bude zadovoljen");
+                Console.WriteLine("dovoljno je jedan uvjet");
+
             }
-            // | provjerava oba uvjeta bez obzira ako je prvi proša (true)
-
-            if(i==5 || j== 1)
+            if (i == 5 || j == 2)
             {
-                Console.WriteLine("Prvi uvjet zadovoljen, drugi se ne provjerava");
+                Console.WriteLine("oba uvjeta zadovoljavaju");
             }
-            // || Ukoliko prvi uvjet prođe (true) drugi se ne provjerava
-
-            // logično NE (!)
-            if((i== 5 || j== 1) && !(i>5 || j < 8))
+            if ((i == 5 || j == 1) && !(i > 5 || j < 8))
             {
-                Console.WriteLine("Komplicirani izraz");
+                Console.WriteLine("komplicirani izraz");
             }
 
-            // skraćeni način pisanja: inline if
+            int cb=int.Parse(Console.ReadLine());
 
-            // Program upisuje cijeli broj
-            // Ako je broj veći od 10 ispisuje Osijek
-            // Inače ispisuje Zagreb
-            Console.Write("Unesi cijeli broj: ");
-            int broj = int.Parse(Console.ReadLine());
-
-            if (broj > 10)
+            if (cb > 10)
             {
                 Console.WriteLine("Osijek");
-            }else 
-            { 
+            }
+            else
+            {
                 Console.WriteLine("Zagreb");
             }
 
-            // u slučaju istog ponašanja s različitim vrijednostima u if i else dijelu
-            // možemo pisati kraće
-
-            // inline if
-            Console.WriteLine(i>10 ? "Osijek" : "Zagreb");
+            Console.WriteLine(cb>10 ? "Osijek" : "Zagreb");
 
 
-
-            // višestruko grananje
             int ocjena = 4;
 
-            switch(ocjena)
+            switch (ocjena)
             {
                 case 1:
-                    Console.WriteLine("Nedovoljan");
-                    break;
+                    Console.WriteLine("nedovoljan");
+                    break;    
                 case 2:
                     case 3:
-                    Console.WriteLine("Dovoljno ili dobro");
+                    Console.WriteLine("dovoljno ili dobro");
                     break;
                 case 4: case 5:
-                    Console.WriteLine("To je ocjena");
+                    Console.WriteLine("to je ocjena");
                     break;
                 default:
-                    Console.WriteLine("Nije ocjena");
+                    Console.WriteLine("nije ocjena");
                     break;
             }
 
             string ime = "Pero";
-            switch(ime)
+
+            switch (ime)
             {
                 case "Marko":
                     Console.WriteLine("OK");
                     break;
                 case "Pero":
-                    Console.WriteLine("Super");
+                    Console.WriteLine("SUPER");
                     break;
+
+
             }
 
-        }
+
+
+
+        }   
     }
 }

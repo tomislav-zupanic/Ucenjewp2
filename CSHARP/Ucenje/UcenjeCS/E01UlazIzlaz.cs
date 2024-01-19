@@ -10,9 +10,9 @@ namespace UcenjeCS
 
 
 
-            
 
-            //Komentar kroz više linija - ne prporuča se 
+
+            //Komentar kroz više linija - ne preporuča se 
 
             // ispisi različitih tipova podataka
             Console.WriteLine(7); // int
@@ -20,7 +20,7 @@ namespace UcenjeCS
             Console.Write("Prvi"); // string
             Console.Write("Drugi"); // string
             Console.WriteLine(3.14); // float
-            
+
 
             // varijabla je prostor u memoriji
             Console.Write("Unesi ime ovdje: ");
@@ -53,12 +53,29 @@ namespace UcenjeCS
             // Program unosi dužinu i širinu prostorije
             // Program ispisuje površinu prostorije
 
+
+            Console.Write("Unesi duzinu: ");
+            float duzina=float.Parse(Console.ReadLine());
+
+            Console.Write("unesi sirinu: ");
+            float sirina=float.Parse(Console.ReadLine());
+
+            float povrsina = (float)duzina * sirina;
+            Console.WriteLine("povrsina je " + povrsina + "metara kvadratnih");
+
+
+
+
+
+
+
+
             Console.Write("Unesi duzinu prostorije: ");
-            float Duzina= float.Parse(Console.ReadLine());
+            float Duzina = float.Parse(Console.ReadLine());
             Console.Write("Unesi sirinu prostorije: ");
             float Sirina = float.Parse(Console.ReadLine());
 
-            float Povrsina =Duzina * Sirina;
+            float Povrsina = Duzina * Sirina;
             Console.WriteLine("Povrsina prostorije je " + Povrsina);
 
 

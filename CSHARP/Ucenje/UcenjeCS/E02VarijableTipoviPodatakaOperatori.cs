@@ -16,7 +16,7 @@
             bool Istina = i == 1;
 
             Console.WriteLine(Istina);
-
+            float manjibroj = 4.5F;
             double Broj = 4.89;
             decimal VeciBroj = 2.89M;
 
@@ -35,7 +35,7 @@
 
             // za dvoznamenkasti broj ispišu prvu znamenku
             int db = 56;
-            Console.WriteLine(db/10);
+            Console.WriteLine((float)db/10);
 
             bool uvjet = i > j;
             uvjet = i >= j;
@@ -48,6 +48,7 @@
             // operator modulo
             // ostatak nakon cjelobrojnog djeljenja
             int ostatak = 9 % 2;
+            Console.WriteLine(ostatak);
 
             // za dvoznamenskasti broj ispiši vrijednost jedinice
             Console.WriteLine(52 % 10);
@@ -75,7 +76,7 @@
             t = ++t - l; // t = 0, l= 2
             Console.WriteLine("t = ++t - l => t={0}, l={1}", t, l);
 
-           l -= t - l; // l = 2, t = 0
+            l -= t - l; // l = 2, t = 0
             Console.WriteLine("l -= t - l => t={0}, l={1}", t, l);
 
             
