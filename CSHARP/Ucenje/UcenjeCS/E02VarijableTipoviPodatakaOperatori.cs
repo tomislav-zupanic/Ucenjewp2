@@ -82,9 +82,6 @@
             Console.WriteLine(++t - --l); // 1 - 1 = 0
             Console.WriteLine("++t - --l => t={0}, l={1}", t, l);
 
-            // Ovo vježbati doma na način
-            // Prvo si postaviti zadatak pa ga nakon 15 minuta riješiti
-
         }
 
     }
