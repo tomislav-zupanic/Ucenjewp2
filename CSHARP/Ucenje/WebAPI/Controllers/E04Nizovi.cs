@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 
 namespace WebAPI.Controllers
 {
@@ -12,7 +13,6 @@ namespace WebAPI.Controllers
         {          
 
             return Podaci[0];
-
 
         }
 
@@ -34,6 +34,10 @@ namespace WebAPI.Controllers
             }      
        return b3;
          }
+
+
+
+
 
         [HttpDelete]
         [Route("zad3")]

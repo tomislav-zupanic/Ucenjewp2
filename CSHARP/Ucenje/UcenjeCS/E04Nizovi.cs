@@ -28,6 +28,10 @@
 
 
 
+            int[,,,,,] ZvjezdaneStaze;
+
+
+
 
         }
        
