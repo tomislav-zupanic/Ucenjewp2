@@ -103,7 +103,7 @@
                 Console.Write(new Random().Next(10, 100) + " ");
                 Console.Write(new Random().Next(10, 100) + " ");
 
-                break;
+                break; 
             }
             int broj;
             for (; ; )
