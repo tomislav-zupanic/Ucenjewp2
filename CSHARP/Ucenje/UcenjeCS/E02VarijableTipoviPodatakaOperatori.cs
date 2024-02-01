@@ -5,11 +5,14 @@
 
         public static void Izvedi()
         {
+
             int Varijabla = 3;
 
             Console.WriteLine(Varijabla);
 
             int i=1, j=0, k;
+
+            Console.WriteLine($"{i} - {j}");
 
             Console.WriteLine("{0} - {1}",i,j);
 
@@ -24,6 +27,7 @@
             Console.WriteLine(int.MaxValue);
             int Mb = int.MaxValue;
             Console.WriteLine(Mb+1);
+
 
             i = 3; j = 2; k = 1;
 

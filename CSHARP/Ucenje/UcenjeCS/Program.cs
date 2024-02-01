@@ -9,7 +9,9 @@ using UcenjeCS;
 
 //E04Nizovi.Izvedi();
 
-E05ForPetlja.Izvedi();
+//E05ForPetlja.Izvedi();
+
+V01ZimskoVjezbanje.Izvedi();
 
 //E06WhilePetlja.Izvedi();
 

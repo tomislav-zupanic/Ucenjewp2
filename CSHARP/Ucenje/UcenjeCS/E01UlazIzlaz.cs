@@ -45,7 +45,7 @@ namespace UcenjeCS
 
 
 
-            ////Učitati decimalni broj i ispisati ga
+            ////Učitati decimalni broj i ispisati ga 
 
             float DecimalniBroj = float.Parse(Console.ReadLine());
             Console.WriteLine(DecimalniBroj);

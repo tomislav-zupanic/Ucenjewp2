@@ -14,7 +14,7 @@ namespace UcenjeCS
             {
                 Console.WriteLine($"broj je {i} usao sam u true dio if naredbe");
             }
-
+            
             if (i == 7)
             {
                 Console.WriteLine("isti uvjet kao i prethodno");
@@ -68,7 +68,7 @@ namespace UcenjeCS
             {
                 Console.WriteLine("oba uvjeta zadovoljavaju");
             }
-            if ((i == 5 || j == 1) && !(i > 5 || j < 8))
+            if ((i == 5 || j == 1) && !(i > 5 || j > 8))
             {
                 Console.WriteLine("komplicirani izraz");
             }

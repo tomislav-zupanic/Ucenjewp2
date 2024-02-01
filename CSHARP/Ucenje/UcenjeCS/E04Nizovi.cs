@@ -11,7 +11,7 @@
             Temperature[11] = 7;
 
             Console.WriteLine(Temperature);
-            Console.WriteLine(String.Join(",",Temperature ));
+            Console.WriteLine(String.Join(",",Temperature));
 
             int[,] Tablica =
             {

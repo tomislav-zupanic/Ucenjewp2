@@ -30,6 +30,9 @@ namespace WebAPI.Controllers
         {
             switch (Ocjena)
             {
+
+
+            
                 case 1:
                     return "Nedovoljan";
                 case 2:
@@ -43,7 +46,7 @@ namespace WebAPI.Controllers
                 default:
                     return "pogresan unos";
 
-            }
+                }
 
 
 
@@ -55,12 +58,15 @@ namespace WebAPI.Controllers
 
 
 
-            //return Ocjena == 1 ? "Nedovoljan" : "";
-            //return Ocjena == 2 ? "Dovoljan" : "";
-            //return Ocjena == 3 ? "Dobar" : "";
-            //return Ocjena == 4 ? "Vrlo dobar" : "";
-            //return Ocjena == 5 ? "Odlican" : "";
+                //return Ocjena == 1 ? "Nedovoljan" : "";
+                //return Ocjena == 2 ? "Dovoljan" : "";
+                //return Ocjena == 3 ? "Dobar" : "";
+                //return Ocjena == 4 ? "Vrlo dobar" : "";
+                //return Ocjena == 5 ? "Odlican" : "";
+                //}
+
         }
+
 
 
 
